@@ -164,10 +164,6 @@ The seat assignment uses a **backtracking algorithm**:
 
 - **Language:** Python 3
 - **Libraries:** None (standard library only)
-- **Algorithm:** Backtracking (Constraint Satisfaction)
+- **Algorithm:** Backtracking
 
 ---
-
-## Author
-
-*Submitted as part of the CFAI Course Project*
