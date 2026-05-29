@@ -187,7 +187,3 @@ The seat assignment uses a **backtracking algorithm**:
 - **Algorithm:** Backtracking (Constraint Satisfaction)
 
 ---
-
-## Author
-
-*Submitted as part of the CFAI Course Project*
