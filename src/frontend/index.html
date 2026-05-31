@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exam Seating Arrangement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Examination Seating Arrangement System</h1>
+
+        <!-- Hall Setup -->
+        <div class="card">
+            <h2>Set Up Hall</h2>
+
+            <input type="number" id="rows" placeholder="Rows">
+            <input type="number" id="cols" placeholder="Columns">
+
+            <button onclick="createHall()">Create Hall</button>
+        </div>
+
+        <!-- Add Student -->
+        <div class="card">
+            <h2>Add Student</h2>
+
+            <input type="text" id="studentName" placeholder="Student Name">
+
+            <select id="requirement">
+                <option value="">No Requirement</option>
+                <option value="front_row">Front Row</option>
+                <option value="back_row">Back Row</option>
+                <option value="wheelchair">Wheelchair</option>
+                <option value="extra_space">Extra Space</option>
+            </select>
+
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <!-- Students -->
+        <div class="card">
+            <h2>Students</h2>
+
+            <ul id="studentList"></ul>
+        </div>
+
+        <!-- Seating -->
+        <div class="card">
+            <h2>Seating Arrangement</h2>
+
+            <button onclick="generateSeating()">
+                Generate Seating
+            </button>
+
+            <div id="hallGrid"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
